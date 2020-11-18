@@ -1,5 +1,5 @@
 # Calculator
-This calculator allows the user to input an expression in the following forms:
+This calculator, written in Java, allows the user to input an expression in the following forms:
 * a {operator} b
 * (a {operator} b) {operator} (c {operator} d)
 Where a,b,c,d are operands (numbers) and the operations consist of addition, subtraction, multiplication and division.
