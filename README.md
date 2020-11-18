@@ -13,7 +13,7 @@ Commands:
 * 'm' - stores the last computed result value in memory (0 if the last expression was invalid).
 * 'mr' - outputs the value stored in memory.
 * 'c' - clears the memory.
-* 'h' 0 displays the history.
+* 'h' - displays the history.
 
 # What I Learnt/Applied
 * Handling ArrayLists in Java.
