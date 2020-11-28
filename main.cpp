@@ -26,13 +26,17 @@ float evaluate(string s)
 {
     try
     {
-        vector<string> operation;
+        vector<string> operation; float result;
         regex e("([+-/*])|([+-]?([[:digit:]])*([\\.])?[[:digit:]]+)");
         smatch m;
         while (regex_search(s,m,e)) {operation.push_back(m[0]); s=m.suffix().str();}
-        return evalCore(operation[0], operation[1], operation[2]);
+        for (int i=0;i<operation.size()-1;i+=2)
+        {
+            result = evalCore(operation[i],operation[i+1],operation[i+2]);
+            operation[i+2] = to_string(result);
+        }
+        return stof(operation[operation.size()-1]);
     } catch (...) {cout << "invalid";}
-
 }
 
 int main()
