@@ -21,6 +21,3 @@ Commands:
 * Writing recursive functions.
 * Iterating through ArrayLists.
 * Taking user input using the Scanner class.
-
-# C++ Calculator
-This new project is somewhat of a port of the Java calculator. However, I am taking a different approach, such as with using the Regex library to analyse the inputted expression instead. So far, it can evaluate an expression of arbitrary length, with a linear 'left to right' order.
